@@ -1,0 +1,19 @@
+<input type="text" [(ngModel)]="cityName" placeholder="type here" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+<button type="button" class="btn btn-outline-primary" (click)="buttonTriggered()">SEARCH</button>
+<button type="button" class="btn btn-outline-dark" (click)="saveWeatherData()">SAVE</button>
+    
+<div *ngIf="checkWeatherData()" class="weather-details">
+    <p class="firstDataTextColor">City: {{ weather.name }}</p>
+    <p class="firstDataTextColor">Timezone: {{ weather.timezone }}</p>
+    <p class="firstDataTextColor">Visibility: {{ weather.visibility }}</p>
+    <p class="firstDataTextColor">Cod: {{ weather.cod }}</p>
+    <p class="firstDataTextColor">Id: {{ weather.id }}</p>
+</div>
+
+<div *ngFor="let save of savedWeather">
+    <p class="flex secondDataTextColor">City: {{ save.name }}</p>
+    <p class="flex secondDataTextColor">Timezone: {{ save.timezone }}</p>
+    <p class="flex secondDataTextColor">Visibility: {{ save.visibility }}</p>  
+    <p class="flex secondDataTextColor">Cod: {{ save.cod }}</p>
+    <p class="flex secondDataTextColor">Id: {{ save.id }}</p>
+</div>

@@ -1,0 +1,10 @@
+<input type="text" placeholder="Search" [(ngModel)]="searchedName">
+<button (click)="searchByName()">Search</button>
+<div class="flexes" *ngFor="let user of peopleToShow">
+    <p>User ID: {{ user.id }}</p>
+    <p>User title: {{ user.title }}</p>
+    <p>User Ms: {{ user.ms }}</p>
+    <p>User FirstName: {{ user.firstName }}</p>
+    <p>User LastName: {{ user.lastName }}</p>
+    <p><img src="{{ user.picture }}"></p>
+</div>
