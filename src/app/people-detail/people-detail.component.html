@@ -1,0 +1,27 @@
+
+<div *ngIf="user" class="container-1">
+    <div class="box-1">
+        <p><strong>ID:</strong> {{ user.id }}</p>
+        <img src="{{ user.picture }}" class="pictureSize">
+    </div>
+    <div class="box-2">
+        <br>
+        <p><span class="bold-text">Gender:</span> {{ user.gender }}</p>
+        <p><strong>Date of birth:</strong> {{ user.dateOfBirth }}</p>
+        <p><strong>Register date:</strong>  {{ user.registerDate }}</p>
+    
+    <br>
+    <br>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Phone:</strong> {{ user.phone }}</p>
+    </div>
+    <div class="box-3">
+        <br>
+        <p><strong>Address</strong></p>
+    <p><strong>State:</strong> {{ user.location.state }}</p>
+    <p><strong>Street:</strong> {{ user.location.street }}</p>
+    <p><strong>City:</strong> {{ user.location.city }}</p>
+    <p><strong>Country:</strong> {{ user.location.country }}</p>
+    <p><strong>Timezone:</strong> {{ user.location.timezone }}</p>
+    </div>
+</div>

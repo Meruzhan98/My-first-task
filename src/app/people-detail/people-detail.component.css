@@ -1,0 +1,24 @@
+.container-1 {
+    display: flex;
+}
+
+.pictureSize {
+    width: 200px;
+    height: 200px;
+}
+
+.box-1 {
+    margin-left: 100px;
+}
+
+.box-2 {
+    margin-left: 100px;
+}
+
+.box-3 {
+    margin-left: 100px;
+}
+
+.bold-text {
+    font-weight: 700;
+}

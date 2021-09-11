@@ -10,11 +10,13 @@ import { WeatherComponent } from './weather/weather.component';
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PeopleComponent } from './people/people.component';
+import { PeopleDetailComponent } from './people-detail/people-detail.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'weather', component: WeatherComponent},
   {path: 'people', component: PeopleComponent},
+  {path: 'people-detail/:id', component: PeopleDetailComponent},
   {path: '**', component: NotFoundComponent}
 ];
 
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
     HomeComponent,
     WeatherComponent,
     NotFoundComponent,
-    PeopleComponent
+    PeopleComponent,
+    PeopleDetailComponent
   ],
   imports: [
     BrowserModule,
